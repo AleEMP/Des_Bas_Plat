@@ -13,24 +13,24 @@
         <div class="grid-item2">
             <h1>Formulario</h1>
             <p>
-                <form method="post">
+                <form action="formulario.php" method="post">
                     <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre"><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
                     <label for="apellidos">Apellidos:</label><br>
-                    <input type="text" id="apellidos" name="apellidos"><br>
+                    <input type="text" id="apellidos" name="apellidos" required><br>
                 
                     <label for="nacimiento">Fecha de Nacimiento:</label><br>
-                    <input type="date" id="nacimiento" name="fecha"><br>
+                    <input type="date" id="nacimiento" name="nacimiento" required><br>
                 
                     <label for="ocupacion">Ocupacion:</label><br>
-                    <input type="text" id="ocupacion" name="ocupacion"><br>
+                    <input type="text" id="ocupacion" name="ocupacion" required><br>
             
                     <label for="contacto">Contacto:</label><br>
-                    <input type="int" id="contacto" name="contacto"><br>
+                    <input type="int" id="contacto" name="contacto" required><br>
                 
                     
                     <label for="nacionalidad">Nacionalidad:</label><br>
-                    <select id="nacionalidad" name="nacionalidad"><br>
+                    <select id="nacionalidad" name="nacionalidad" required><br>
                         <option value="Perú">Perú</option><br>
                         <option value="Brasil">Brasil</option><br>
                         <option value="Chile">Chile</option><br>
@@ -39,7 +39,7 @@
                 
             
                     <label for="nivel_ingles">Nivel de ingles:</label><br>
-                    <input type="radio" id="A1" name="nivel_ingles" value="A1">
+                    <input type="radio" id="A1" name="nivel_ingles" value="A1" required>
                     <label for="A1">A1</label><br>
                     <input type="radio" id="A2" name="nivel_ingles" value="A2">
                     <label for="A2">A2</label><br>
@@ -53,7 +53,7 @@
                     <label for="C2">C2</label><br>
                 
                     <label for="lenguajes">Lenguajes de programación: </label><br>
-                    <select id="lenguajes" name="lenguajes" multiple>
+                    <select id="lenguajes" name="lenguajes[]" multiple>
                     <option value="python">Python</option>
                     <option value="java">Java</option>
                     <option value="javascript">JavaScript</option>
@@ -64,25 +64,28 @@
 
                     
                     <label for="aptitudes">Aptitudes:</label><br><br>
-                    <input type="text" id="aptitudes" name="aptitudes" list="habilidades" required>
+                    <input type="text" id="aptitudes" name="aptitudes" required>
                     
-                    <datalist id="habilidades">
-                        <option value="Trabajo en equipo">
-                        <option value="Comunicación">
-                        <option value="Resolución de problemas">
-                        <option value="Creatividad">
-                        <option value="Liderazgo">
-                    </datalist><br><br>
+                    <datalist id="aptitudes">
+                        <option value="Toma de decisiones">
+                        <option value="Organizacion">
+                        <option value="Pensamiento critico">
+                        <option value="Habilidades interpersonales">
+                        <option value="Manejo del estres">
+                        <option value="Trabajo bajo presion">
+                        <option value="Persuasion">
+                    </datalist><br>
+
                     <label for="habilidades">Habilidades:</label><br>
-                    <input type="checkbox" id="habilidades1" name="habilidades" value="Trabajo en equipo">
-                    <label for="habilidades1">Trabajo en equipo</label><br>
-                    <input type="checkbox" id="habilidades2" name="habilidades" value="Comunicación">
-                    <label for="habilidades2">Comunicación</label><br>
-                    <input type="checkbox" id="habilidades3" name="habilidades" value="Resolución de problemas">
-                    <label for="habilidades3">Resolución de problemas</label><br>
-                    <input type="checkbox" id="habilidades4" name="habilidades" value="Creatividad">
-                    <label for="habilidades4">Creatividad</label><br>
-                    <input type="checkbox" id="habilidades5" name="habilidades" value="Liderazgo">
+                    <input type="checkbox" id="habilidades1" name="habilidades[]" value="Comunicacion efectiva">
+                    <label for="habilidades1">Comunicacion efectiva</label><br>
+                    <input type="checkbox" id="habilidades2" name="habilidades[]" value="Trabajo en equipo">
+                    <label for="habilidades2">Trabajo en equipo</label><br>
+                    <input type="checkbox" id="habilidades3" name="habilidades[]" value="Adaptabilidad">
+                    <label for="habilidades3">Adaptabilidad</label><br>
+                    <input type="checkbox" id="habilidades4" name="habilidades[]" value="Orientacion al cliente">
+                    <label for="habilidades4">Orientacion al cliente</label><br>
+                    <input type="checkbox" id="habilidades5" name="habilidades[]" value="Liderazgo">
                     <label for="habilidades5">Liderazgo</label><br>
                 
                     <label for="perfil">Perfil:</label><br><br>
@@ -90,11 +93,9 @@
                     
                     <input type="submit" name="subir">
                 </form>
+                
         </div>
         <div class="grid-item1"></div>
     </div>
-    <?php
-    include("procesar-formulario.php");
-    ?>
 </body>
 </html>
