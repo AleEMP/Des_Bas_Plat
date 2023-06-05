@@ -1,0 +1,18 @@
+.tachado {
+    text-decoration: line-through;
+  }
+  .task-input {
+    position: fixed;
+    top: 60px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 100%;
+  }
+  .task-list {
+    padding-top: 30px;
+  }
+  .delete-task {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+  }

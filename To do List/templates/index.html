@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="static/index.css" type="text/css" />
+    <title>Todo List con Flask</title>
+    
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div class="task-input">
+      <form id="new-task">
+        <input id="task" autocomplete="off" autofocus placeholder="New Task" type="text">
+        <input type="submit" value="Add Todo">
+      </form>
+      <button id="select-all-button">Complete All</button>
+    </div>
+    <div class="task-list">
+      <ol id="tasks">
+        {% for task in tasks %}
+        <li>
+          <span>{{ loop.index }}. {{ task }}</span>
+          <button class="delete-task">X</button>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#new-task').addEventListener('submit', (event) => {
+          event.preventDefault(); // Evita que se envíe el formulario
+    
+          const taskInput = document.querySelector('#task');
+          const taskName = taskInput.value;
+    
+          if (taskName) {
+            const taskList = document.querySelector('#tasks');
+            const newTask = document.createElement('li');
+    
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.addEventListener('change', () => {
+              newTask.classList.toggle('tachado');
+            });
+    
+            const taskLabel = document.createElement('label');
+            taskLabel.textContent = taskName;
+            taskLabel.addEventListener('click', () => {
+              checkbox.checked = !checkbox.checked;
+              newTask.classList.toggle('tachado');
+            });
+    
+            const deleteButton = document.createElement('button');
+            deleteButton.classList.add('delete-task');
+            deleteButton.textContent = 'X';
+            deleteButton.addEventListener('click', () => {
+              newTask.remove();
+            });
+    
+            newTask.appendChild(checkbox);
+            newTask.appendChild(taskLabel);
+            newTask.appendChild(deleteButton);
+            taskList.appendChild(newTask);
+    
+            taskInput.value = ''; // Limpia el campo de entrada de tarea
+          }
+        });
+        
+        document.querySelector('#select-all-button').addEventListener('click', () => {
+          const checkboxes = document.querySelectorAll('#tasks input[type="checkbox"]');
+          checkboxes.forEach((checkbox) => {
+            checkbox.checked = true;
+            checkbox.parentNode.classList.add('tachado');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
