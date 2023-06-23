@@ -1,0 +1,16 @@
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\bin\Debug\netstandard2.0\UnU.deps.json
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\bin\Debug\netstandard2.0\UnU.dll
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\bin\Debug\netstandard2.0\ref\UnU.dll
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\bin\Debug\netstandard2.0\UnU.pdb
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\UnU.csproj.AssemblyReference.cache
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\UnU.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\View\PrimeraPag.xaml.g.cs
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\View\SegundaPag.xaml.g.cs
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\UnU.AssemblyInfoInputs.cache
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\UnU.AssemblyInfo.cs
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\UnU.csproj.CoreCompileInputs.cache
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\UnU.dll
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\refint\UnU.dll
+C:\Users\Alejandra\source\repos\UnU\UnU\UnU\obj\Debug\netstandard2.0\UnU.pdb

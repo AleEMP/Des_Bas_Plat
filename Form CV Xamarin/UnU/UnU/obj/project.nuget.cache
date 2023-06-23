@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KB0HTLaP263xsiqK+qW8zUFT+ZX5cZ7RziUCy4DGSocga3e4FgcDTJJyguYiK5avp27Gp7RRhrdX7dMDrepeew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alejandra\\source\\repos\\UnU\\UnU\\UnU\\UnU.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alejandra\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Alejandra\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Alejandra\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Alejandra\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Alejandra\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
